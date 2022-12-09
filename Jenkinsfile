@@ -6,7 +6,7 @@ pipeline{
         sh 'python --version'
       }
     }
-    stage('built') {
+    stage('build') {
       steps {
        sh 'python3 rev.py'
       }
