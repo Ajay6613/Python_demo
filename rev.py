@@ -1,3 +1,8 @@
+from matplotlib.pyplot import *
+from matplotlib.widgets import *
+from math import *
+from random import *
+from numpy import *
 from tkinter import *
 import tkinter
 root = tkinter.Tk()
