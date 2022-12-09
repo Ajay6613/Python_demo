@@ -8,7 +8,7 @@ pipeline{
     }
     stage('rev') {
       steps {
-        sh 'python3 rev.py'
+       sh 'python3 rev.py'
       }
     }
   }
