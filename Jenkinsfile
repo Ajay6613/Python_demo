@@ -8,7 +8,7 @@ pipeline{
     }
     stage('build') {
       steps {
-       sh 'python3 rev.py'
+       git branch: 'main', url: 'https://github.com/Ajay6613/python_demo.git'
       }
     }
   }
