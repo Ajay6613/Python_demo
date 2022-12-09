@@ -1,16 +1,22 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-fig, ax = plt.subplots(1, 2, constrained_layout=True, figsize=(6, 2))
+from tkinter import *
+import tkinter
+root = tkinter.Tk()
+root.title("Welcome to Selection of Unit Test")
+root.geometry('350x200')
+lbl = Label(root, text = "Please select the unit")
+lbl.grid()
+CheckVar1 = IntVar()
+CheckVar2 = IntVar()
+C1 = Checkbutton(root, text = "Unit1", variable = CheckVar1, \
+                 onvalue = 1, offvalue = 0, height=5, \
+                 width = 20)
+C2 = Checkbutton(root, text = "unit2", variable = CheckVar2, \
+                 onvalue = 1, offvalue = 0, height=5, \
+                 width = 20)
 
-ax[0].set_title('Ticks seem out of order / misplaced')
-x = ['5', '20', '1', '9']  # strings
-y = [5, 20, 1, 9]
-ax[0].plot(x, y, 'd')
-ax[0].tick_params(axis='x', labelcolor='red', labelsize=14)
-
-ax[1].set_title('Many ticks')
-x = [str(xx) for xx in np.arange(100)]  # strings
-y = np.arange(100)
-ax[1].plot(x, y)
-ax[1].tick_params(axis='x', labelcolor='red', labelsize=14)
+C1.pack()
+C2.pack()
+root.mainloop()
