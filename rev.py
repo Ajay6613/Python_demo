@@ -1,22 +1,29 @@
-import matplotlib.pyplot as plt
-import numpy as np
+importos
 
-from tkinter import *
-import tkinter
-root = tkinter.Tk()
-root.title("Welcome to Selection of Unit Test")
-root.geometry('350x200')
-lbl = Label(root, text = "Please select the unit")
-lbl.grid()
-CheckVar1 = IntVar()
-CheckVar2 = IntVar()
-C1 = Checkbutton(root, text = "Unit1", variable = CheckVar1, \
-                 onvalue = 1, offvalue = 0, height=5, \
-                 width = 20)
-C2 = Checkbutton(root, text = "unit2", variable = CheckVar2, \
-                 onvalue = 1, offvalue = 0, height=5, \
-                 width = 20)
+List1= [8, 9, 3, 6, 1, 10]
 
-C1.pack()
-C2.pack()
-root.mainloop()
+List1.reverse()
+
+print("The reversed list is", List1)
+
+
+
+List2= [91, 67, 120, 34, 76, 54, 78, 87, 56, 64, 345]
+
+List2.sort()
+
+print ("The sorted list is" , List2)
+
+
+
+List3= []
+
+List3= List1.copy()
+
+print("List3 =", List3)
+
+
+
+indexvalue= List2[2:6]
+
+print("The index values are" , indexvalue)
